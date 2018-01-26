@@ -83,20 +83,6 @@
 			$('.our-work .portfolio-list li').addClass('animated rollIn');
 		});
 	});
-	/* Blog Section */
-	
-	$('.blog-section').each(function ()
-	{
-		var $this = $(this);
-		var myVal = $(this).data("value");
-
-		$this.appear(function()
-		{
-			$('.blog-section .section-header').addClass('animated fadeInDown');
-			$('.blog-section .post').addClass('animated fadeInUp');
-		});
-	});
-
 	/* Client Section */
 	$('.client-section').each(function ()
 	{
@@ -137,18 +123,6 @@
 		//$('.client-style3').css('clip-path','url("#client-3")');
 	});
 	
-	/* Brag About Section */
-	$('.brag-about-section').each(function ()
-	{
-		var $this = $(this);
-		var myVal = $(this).data("value");
-
-		$this.appear(function()
-		{
-			$('.brag-about-section .brag-about-img').addClass('animated fadeInDown');
-			$('.brag-about-section .brag-content').addClass('animated fadeInLeft');
-		});
-	});
 
 	/* Social Section */
 	$('.social-main').each(function ()
@@ -237,24 +211,6 @@
 		}
 	},{accX: 0, accY: -70});*/
 	
-	
-	
-	
-	/* Statistics Section */
-	$('.statistics-section').each(function ()
-	{
-		var $this = $(this);
-		var myVal = $(this).data("value");
-
-		$this.appear(function()
-		{
-			$('#project').animateNumber({ number: 145 }, 2000);
-			$('#work').animateNumber({ number: 2456 }, 2000);
-			$('#consumed').animateNumber({ number: 3125 }, 2000);
-			$('#videos').animateNumber({ number: 2478 }, 2000);
-		});
-	});
-	
 	/* Event - Document Ready /- */	
 	$(document).ready(function($)
 	{
@@ -315,55 +271,12 @@
 		/* Window Hight Set to Elements /- */
 		var window_height = $(window).height();
 		var window_width = $(window).width();
-		
-		/*$("#client-testimonials").owlCarousel(
-		{
-			autoPlay: 3000, //Set AutoPlay to 3 seconds
-			items : 3,
-			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3],
-			navigation : true,
-			pagination: false
-		});*/
-		
-		
-		
-		/* Skill Section */
-		/*$('.portfolio-accordion-skill .skill-progress-box').appear(function() {
-			$('.illustrator').css('width', '80%');
-			$('.wordpress').css('width', '72%');
-			$('.html-css').css('width', '50%');
-			$('.photoshop').css('width', '80%');
-			$('.javascript').css('width', '68%');
-			$('.coreldraw').css('width', '90%');
-			}
-		);*/
-		
+
 		// picker buttton
 		$(".picker_close").click(function()
 		{
 			$("#choose_color").toggleClass("position");
 		});
-		
-		/* Lightbox for Highlights Gallery	*/
-		/*$('#our-team-section .team-inner .team-member-image').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			mainClass: 'mfp-img-mobile',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-			},
-			image: {
-				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-				/*titleSrc: function(item) {
-					return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-				}*/
-			//}
-		//});
-		
 	});
 	/* document.ready /- */
 
