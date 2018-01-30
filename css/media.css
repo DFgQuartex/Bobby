@@ -1,7 +1,145 @@
-@media only screen and (max-device-width:480px){
+@media only screen and (max-device-width:900px){
+html{
+	-webkit-font-smoothing: antialiased !important;
+}
+body{
+	
+	-webkit-font-smoothing: antialiased !important;
+	font-size: 200%;
+	zoom: 1.1;
+}
+.slider-section{
+	background-size: 100%;
+	background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+}
+.containers {
+	left: 70px;
+	top: -330px;
+	bottom: 500px;
+  width: 460px;
+  position: relative;
+}
+#contact1 button[type="submit"]{
+	font-size: 30px;
+
+}
+.service-section .container p{
+	font-size: 20px;
+}
+.service-section .container h3{
+	font-size: 30px;
+}
+.features-section h3{
+	font-size: 19px;
+}
+#picton_text p{
+	font-size: 25px;
+}
+#picton_text{
+	margin-left: 30px;
+	margin-top: -10px;
+}
+#picton_text h4{
+	font-size: 30px;
+}
+.btn-theme{
+	font-size: 30px;
+}
+.testimonial .description{
+	font-size: 30px;
+}
+.testimonial-title{
+	font-size: 25px;
+}
+#btn_purchase{
+	font-size: 30px;
+}
+#text{
+	font-size: 25px;
+}
+.delivery-text-section h3 {
+	font-size: 30px;
+}
+.delivery-text-section span {
+	font-size: 25px;
+}
+.btn-buy{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	border-radius: 50px;
+	font-size: 30px;
+
+	margin-top: 300px;
+	margin-left: -220px; 
+}
+.btn-red{
+	background: #E73D39;
+	color: white;
+
+}
+#clockdiv{
+	position: relative;
+	padding-left: 70px;
+	bottom: 200px;
+	top: 400px;
+	font-family: sans-serif;
+	color: #fff;
+	font-weight: 100;
+	text-align: left;
+}
+
+#clockdiv > div{ /*внешний div*/
+	padding: 10px;
+	border-radius: 3px;
+	background: #FF6E40;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	color: #FF6E40;
+	padding: 25px;
+	border-radius: 3px;
+	background: #fff;
+	font-size: 40px;
+	display: inline-block;
 
 }
 
-@media only screen and (min-device-width:1903px) and (max-device-width:974px){ /*от iphone7 plus*/
-	
+.smalltext{
+	text-align: center;
+	padding-top: 10px;
+	font-size: 100%;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+ 
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  	 		.slider-section{
+	background-size: 100%;
+	background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+
+}
 }

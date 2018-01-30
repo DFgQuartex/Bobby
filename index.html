@@ -39,67 +39,48 @@
 </head>
 <body data-offset="200" data-spy="scroll" data-target=".primary-navigation">
 	<a id="top"></a>
-	
-	<!-- LOADER -->
-	<div id="site-loader" class="load-complete">
-		<div class="load-position">
-			<div class="logo"><img src="images/loading-logo.png" alt="loading-logo"/></div>
-			<h6>Пожалуйста, подождите...</h6>
-			<div class="loading">
-				<div class="loading-line"></div>
-				<div class="loading-break loading-dot-1"></div>
-				<div class="loading-break loading-dot-2"></div>
-				<div class="loading-break loading-dot-3"></div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Style Switcher -->
-	<!--div class="color-switcher" id="choose_color">
-		<a href="#" class="picker_close">
-			<i class="fa fa-gear fa-spin" ></i>
-		</a>
-		<div class="theme-colours">
-			<p>Choose Colour style</p>
-			<ul>
-				<li><a href="#." class="blue" id="default"></a></li>
-				<li><a href="#." class="green" id="green"></a></li>
-				<li><a href="#." class="red" id="red"></a></li>
-				<li><a href="#." class="yellow" id="yellow"></a></li>
-				<li><a href="#." class="light-green" id="light-green"></a></li>
-				<li><a href="#." class="orange" id="orange"></a></li>
-				<li><a href="#." class="pink" id="pink"></a></li>
-				<li><a href="#." class="black" id="black"></a></li>
-			</ul>
-		</div>
-	</div-->
-	
 	<!-- Slider Section -->
-	<div id="photos-slider" class="slider-section">
-		<div class="slides-container" >
-			<!-- slide item 1 -->
-			<div class="slide-item" >
-				<img src="images/background2.jpg" alt="Slide 1" style="background-size: cover;"/>
-				<h2 class="slide-title">
-					<span class="inner-circle">
-						<span>Bobby</span>
-						<span>Лучший</span>
-						<span>Рюкзак</span>
-					</span>
-				</h2>
-							
-			</div><!-- slide item 1 over -->
-			
+	<div class="slider-section" style="background-image: url(images/background.jpg);">
+
+		<div id="clockdiv">
+		<h2>До конца акции осталось:</h2>
+		  <div>
+		    <span class="days"></span>
+		    <div class="smalltext">Дней</div>
+		  </div>
+		  <div>
+		    <span class="hours"></span>
+		    <div class="smalltext">Часов</div>
+		  </div>
+		  <div>
+		    <span class="minutes"></span>
+		    <div class="smalltext">Минут</div>
+		  </div>
+		  <div>
+		    <span class="seconds"></span>
+		    <div class="smalltext">Секунд</div>
+		  </div>
+		</div>		
+	<div class="containers" id="myForm">  
+		  <form id="contact1" action="./contacto.php" target="hidden" method="post">
+		  <div id="alert-msg" class="alert-msg"></div>
+		    <h3>Закажите со скидкой!</h3>
+		    <fieldset>
+		      <input placeholder="Your name" 
+		       name="name" id="name1" type="text" tabindex="1" required autofocus>
+		    </fieldset>
+		    <fieldset>
+		      <input placeholder="Your Email Address" type="email" id="email1" name="email" tabindex="2" required>
+		    </fieldset>
+		    <fieldset>
+		      <input placeholder="Your Phone Number (optional)" name="phone" id="phone1" type="tel" tabindex="3" required>
+		    </fieldset>
+		    <fieldset>
+		      <button name="submit" type="submit" id="contact-submit">Заказать</button>
+		    </fieldset>
+		  </form>
 		</div>
-		<nav class="slides-navigation">
-			<a href="#" class="next"><i class="arrow_carrot-right"></i></a>
-			<a href="#" class="prev"><i class="arrow_carrot-left"></i></a>
-		</nav>
-		<p class="goto-next">Подробнее<a class="arrow animated ci bounce" href="#service-section" style="padding-left: 15px;"><i class="fa fa-angle-down"></i></a></p>
 	</div>
-	<!-- Slider Section Over-->
-	
-	<!-- Header Section -->
 	<header id="header-section" class="header-section">
 		<div class="col-md-2 col-sm-2 col-xs-6 logo-block">
 			<a href="#op"><img src="images/logo.png" alt="logo"/></a>
@@ -128,6 +109,10 @@
 			</nav>
 		</div>
 	</header>
+	<!-- Slider Section Over-->
+	
+	<!-- Header Section -->
+	
 	<!-- Header Section Over -->
 	
 	<!-- Services Section -->
@@ -203,7 +188,7 @@
 				</div>
 			</div>
 		</div>
-  	<a id="btn_purchase"><button type="button" class="btn btn-primary btn-lg" style="background-color: #E64C3D; border-color: #E64C3D;" data-toggle="modal" data-target="#myModal">Заказать рюкзак</button></a>
+  	<button class="btn btn-red btn-buy" data-toggle="modal" data-target="#myModal">Заказать сейчас всего за 2290</button>
 	</div>
 	<!-- Services Section Over -->
 	
@@ -354,17 +339,16 @@
 			</ul>
 		</div>
 	</section>
-	<!-- Our Work Section Over -->
 	<div id="picton">
 		<div class="row nopadding">
 			<div class="col-md-6 pull-left">
-				<img src="images/research/research1.png" class="imac-screen alignleft" alt="" data-effect="slide-left">
+				<img src="images/research/research1.png" class="imac-screen alignleft wow bounceInLeft" alt="" data-effect="slide-left">
 			</div>
-			<div class="col-md-5 mt">
-				<h4>Multiple Templates Options</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<div class="col-md-5 mt" id="picton_text">
+				<h4>Защита от краж</h4>
+				<p>Большой город - это всегда движение, скорость, суматоха.</p>
+				<p>И мошенники пользуются этим на все 100%. Но для того чтобы обезопасить свои вещи нужно немного - держать все в закрытости.</p>
+				<p>Рюказак Антивор польностью реализоывавает данный параметр, так как у него нет внешних карманов и мошенники не смогут получить доступ к Вашим вещам.</p>
 				<p class="mt"><button class="btn btn-white btn-theme" data-toggle="modal" data-target="#myModal">Заказать сейчас всего за 2290</button></p>
 			</div>
 	
@@ -372,29 +356,29 @@
 	</div>
 	<div id="curious">
 		<div class="row nopadding">
-			<div class="col-md-5 col-md-offset-1 mt">
-				<h4>Important Tools Provided</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<div class="col-md-5 col-md-offset-1 mt" id="picton_text">
+				<h4>Защита от порезов</h4>
+				<p>Для создания прочной конструкции использовалось пять слоев из разного типа материалов</p>
+				<p>Данный рюкзак может выдержать множество экспериментов, в том числе и порезы.</p>
+				<p>Так же с этим рюкзаком Вам не стоит беспокоиться о том, что Ваши вещи могут быть сдавлены</p>
 				<p class="mt"><button class="btn btn-white btn-theme" data-toggle="modal" data-target="#myModal">Заказать сейчас со скидкой 20%</button></p>
 			</div>
 			
 			<div class="col-md-6 pull-right">
-				<img src="images/research/research2.png" class="imac-screen alignright" alt="" data-effect="slide-right">
+				<img src="images/research/research2.png" class="imac-screen alignright wow bounceInRight" alt="" data-effect="slide-right">
 			</div>
-		</div><! --/row -->
+		</div>
 	</div>
 <div id="picton">
 		<div class="row nopadding">
 			<div class="col-md-6 pull-left">
-				<img src="images/research/research3.png" class="imac-screen alignleft" alt="" data-effect="slide-left">
-			</div>
-			<div class="col-md-5 mt">
-				<h4>Multiple Templates Options</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<img src="images/research/research3.png" class="imac-screen alignleft wow bounceInLeft" alt="" data-effect="slide-left">
+			</div> 
+			<div class="col-md-5 mt" id="picton_text">
+				<h4>Распределение веса</h4>
+				<p>Благодаря уникальному дизайну снимается нагрузка на плечи</p>
+				<p>Для каждого предмета есть свой кармашек, благодаря чему достигается такой результат. Ведь самое главное - здоровье</p>
+				<p>Так же благодаря мягкой спинке, рюкзак никак не создает дискомфорт для Вас </p>
 				<p class="mt"><button class="btn btn-white btn-theme" data-toggle="modal" data-target="#myModal">Заказать сейчас со скидкой 20%</button></p>
 			</div>
 	
@@ -402,24 +386,24 @@
 	</div>
 <div id="curious">
 		<div class="row nopadding">
-			<div class="col-md-5 col-md-offset-1 mt">
-				<h4>Important Tools Provided</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<div class="col-md-5 col-md-offset-1 mt" id="picton_text">
+				<h4>Безопасность</h4>
+				<p>Установлены светоотражающие элементы.</p>
+				<p>Во время прогулки и езды на велосипеде Вас легко заметят водители</p>
+				<p>Это поможет Вам всегда находится в безопасности во время прогулки или езды.</p>
 				<p class="mt"><button class="btn btn-white btn-theme" data-toggle="modal" data-target="#myModal">Заказать сейчас всего за 2290</button></p>
 			</div>
 			
 			<div class="col-md-6 pull-right">
-				<img src="images/research/research4.png" class="imac-screen alignright" alt="" data-effect="slide-right">
+				<img src="images/research/research4.png" class="imac-screen alignright wow bounceInRight" alt="" data-effect="slide-right">
 			</div>
-		</div><! --/row -->
+		</div>
 	</div>
 
 	
 		<div class="section-header"><h2>Обзор рюкзака на YouTube</h2></div>
 			<div class="video-section">
-				<center><iframe class="video-frame" width="600" height="350" src="https://www.youtube.com/embed/zqVurwPm1Nc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen"></iframe></center>
+				<center><iframe class="video-frame" width="600" height="350" src="https://www.youtube.com/embed/llcAWK86430" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen"></iframe></center>
 			</div>
 <div class="demo" id="demo">
     <div class="container">
@@ -527,8 +511,8 @@
 						<img src="images/sdek.png">
 					<div class="delivery-text-section">
 
-            <h3>Доставка курьером</h3>
-                Срок доставки -  3-5 дней.<br>
+            <h3>Доставка курьерской службой</h3>
+                <span>Срок доставки -  3-5 дней.<br>
                 Доставка по Росии - 300 рублей</span>
             </div>
 				</li>
@@ -575,7 +559,7 @@
 			</div>
 		</div>
 		<div class="footer-item">
-			<a class="fa fa-vk" id="vk"></a>
+			<a class="fa fa-vk" id="vk" href="https://vk.com"></a>
 			<div class="footer-inner">
 				<p class="footer-item-title">Вконакте</p>
 				<p class="footer-item-desc">Наше сообщество</p>
